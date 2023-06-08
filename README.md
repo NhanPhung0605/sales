@@ -4,6 +4,9 @@ I have already install docker desktop to set up kafka, zookeeper with docker-com
 And i have also put the sql file 
 ![image](https://github.com/NhanPhung0605/sales/assets/88967318/b0b4678f-bdd9-4f07-8f3e-d830c87f4bf9)
 
+
+
+
 Yah i know Tom's Boss is a difficult person and always changes requirements,
 so i write code **specification jpa** to if he can change or add more requirements
 
