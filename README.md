@@ -1,6 +1,6 @@
 Here my test
 I have already install docker desktop to set up kafka, zookeeper with docker-compose.yml
-![image](https://github.com/NhanPhung0605/sales/assets/88967318/7214192b-539c-4be7-86fd-dad603964d1c
+![image](https://github.com/NhanPhung0605/sales/assets/88967318/7214192b-539c-4be7-86fd-dad603964d1c)
 And i have also put the sql file 
 ![image](https://github.com/NhanPhung0605/sales/assets/88967318/b0b4678f-bdd9-4f07-8f3e-d830c87f4bf9)
 
