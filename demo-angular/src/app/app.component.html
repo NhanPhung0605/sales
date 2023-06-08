@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Demo Angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+</head>
+<body>
+<h2>Aggregated Sales Data</h2>
+<table mat-table [dataSource]="salesData" class="mat-elevation-z8">
+  <!-- Product Column -->
+  <ng-container matColumnDef="product">
+    <th mat-header-cell *matHeaderCellDef>Product</th>
+    <td mat-cell *matCellDef="let sale">{{ sale.productName }}</td>
+  </ng-container>
+
+  <!-- Store Column -->
+  <ng-container matColumnDef="store">
+    <th mat-header-cell *matHeaderCellDef>Store</th>
+    <td mat-cell *matCellDef="let sale">{{ sale.storeName }}</td>
+  </ng-container>
+
+  <!-- Sales Units Column -->
+  <ng-container matColumnDef="salesUnits">
+    <th mat-header-cell *matHeaderCellDef>Total Sales Units</th>
+    <td mat-cell *matCellDef="let sale">{{ sale.salesUnit }}</td>
+  </ng-container>
+
+  <!-- Sales Revenue Column -->
+  <ng-container matColumnDef="salesRevenue">
+    <th mat-header-cell *matHeaderCellDef>Total Sales Revenue</th>
+    <td mat-cell *matCellDef="let sale">{{ sale.salesRevenue }}</td>
+  </ng-container>
+
+  <!-- Table Rows -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let sale; columns: displayedColumns;"></tr>
+</table>
+
+</body>
+</html>
